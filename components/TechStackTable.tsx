@@ -118,7 +118,8 @@ export default function TechStackTable() {
             Firebase
           </li>
           <li className="flex items-center gap-3">
-            <PlaywrightIcon /> Playwright
+            <PlaywrightIcon className="text-blue-600 dark:text-blue-400" />{" "}
+            Playwright
           </li>
           <li className="flex items-center gap-3">
             <SiJest className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
