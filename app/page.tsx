@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center pt-28 pb-12 bg-gray-50 dark:bg-neutral-800 text-gray-800 dark:text-gray-100">
       {/* Hero */}
-      <section id="hero" className="max-w-3xl text-center space-y-6">
+      <section id="hero" className="max-w-3xl text-center space-y-6 px-4">
         <h1 className="text-5xl font-extrabold tracking-tight">
           Hi, I’m{" "}
           <span className="text-blue-600 dark:text-blue-400">David</span>
@@ -33,7 +33,7 @@ export default function Home() {
         {/* Project Card */}
         <div className="p-6 shadow hover:shadow-md transition bg-white dark:bg-neutral-900">
           <div className="md:flex space-x-8">
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between mb-4 md:mb-0">
               <div>
                 <h3 className="text-xl font-semibold">Trip Timeline Planner</h3>
                 <p>
@@ -71,16 +71,20 @@ export default function Home() {
       {/* About me */}
       <section id="about" className="w-full mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">🌱 About me</h2>
-        <div className="flex items-center justify-center mb-4">
+
+        <div className="flex flex-col md:flex-row items-center md:items-center justify-center mb-4 gap-8">
+          {/* Picture */}
           <Image
-            className="mx-8 rounded-xl"
+            className="rounded-xl"
             src="/mypic.png"
             alt="My Picture"
             width={300}
             height={300}
           />
-          <div>
-            <h3 className="text-2xl font-bold mb-12">
+
+          {/* Text */}
+          <div className="mt-4 md:mt-0 text-center md:text-left">
+            <h3 className="text-2xl font-bold mb-4">
               I’m{" "}
               <span className="text-blue-600 dark:text-blue-400">
                 David Mambou Fotie
