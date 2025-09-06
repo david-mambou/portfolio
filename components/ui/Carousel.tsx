@@ -50,7 +50,7 @@ export default function Carousel() {
             src={img}
             alt={`Slide ${i + 1}`}
             fill
-            className=" object-cover"
+            className=" object-fill"
             priority={i === 0}
           />
         </Transition>
