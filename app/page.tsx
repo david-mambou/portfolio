@@ -76,16 +76,29 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-12">🌱 About me</h2>
         <div className="flex justify-center mb-4">
           <Image
-            className="rounded-xl"
+            className="mx-8 rounded-xl"
             src="/mypic.png"
             alt="My Picture"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
           />
-          <p className="text-lg text-gray-600">
-            I’m a full-stack developer with a passion for building web
-            applications that provide seamless user experiences.
-          </p>
+          <div>
+            <h3 className="text-2xl font-bold mb-12">
+              I’m <span className="text-blue-600">David Mambou Fotie</span> — a
+              full-stack software engineer with 3 years of professional
+              experience.
+            </h3>
+            <p className="text-xl text-gray-600">
+              I hold a Master’s degree in Engineering, and over the past few
+              years I’ve had the opportunity to collaborate with clients from
+              around the world, building modern, reliable, and scalable
+              applications. My work spans both front-end and back-end
+              development, allowing me to deliver complete solutions from
+              intuitive user interfaces to robust server-side systems. I’m
+              passionate about writing clean, maintainable code and leveraging
+              the best tools to solve real problems.
+            </p>
+          </div>
         </div>
       </section>
 
