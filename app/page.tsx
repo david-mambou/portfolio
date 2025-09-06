@@ -7,9 +7,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center py-12 bg-gray-50 text-gray-800">
+    <main className="flex min-h-screen flex-col items-center justify-center pt-28 pb-12 bg-gray-50 text-gray-800">
       {/* Hero */}
-      <section className="max-w-3xl text-center space-y-6">
+      <section id="hero" className="max-w-3xl text-center space-y-6">
         <h1 className="text-5xl font-extrabold tracking-tight">
           Hi, I’m <span className="text-blue-600">David</span>
         </h1>
@@ -20,7 +20,7 @@ export default function Home() {
         <Link
           href="#contact"
           className="rounded-lg border border-gray-300 px-5 py-2 text-gray-700 font-medium shadow hover:bg-gray-100 transition"
-          scroll={true}
+          scroll
         >
           Contact Me
         </Link>
@@ -72,7 +72,7 @@ export default function Home() {
       </section>
 
       {/* About me */}
-      <section className="w-full mx-auto px-6 py-16">
+      <section id="about" className="w-full mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">🌱 About me</h2>
         <div className="flex justify-center mb-4">
           <Image
