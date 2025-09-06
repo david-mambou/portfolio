@@ -30,7 +30,7 @@ export default function Carousel() {
 
   return (
     <div
-      className="relative w-full max-w-2xl mx-auto overflow-hidden rounded-2xl shadow-lg aspect-[16/9]"
+      className="group relative w-full max-w-2xl mx-auto overflow-hidden rounded-2xl shadow-lg aspect-[16/9]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -59,13 +59,13 @@ export default function Carousel() {
       {/* Controls */}
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 text-white p-2 hover:bg-black/70"
+        className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 text-white p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/70"
       >
         ‹
       </button>
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 text-white p-2 hover:bg-black/70"
+        className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 text-white p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/70"
       >
         ›
       </button>
