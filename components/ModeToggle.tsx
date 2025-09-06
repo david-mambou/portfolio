@@ -11,7 +11,7 @@ export function ModeToggle() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       {/* Button */}
-      <MenuButton className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white dark:bg-black px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none">
+      <MenuButton className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white dark:bg-neutral-900 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none">
         {/* Sun/Moon icons crossfade */}
         <FaRegSun className="h-5 w-5 transition-all dark:hidden" />
         <FaMoon className="h-5 w-5 hidden dark:block transition-all" />
@@ -19,7 +19,7 @@ export function ModeToggle() {
 
       {/* Dropdown */}
       <MenuItems
-        className="absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-white dark:bg-black shadow-lg ring-1 ring-black/5 focus:outline-none"
+        className="absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-white dark:bg-neutral-900 shadow-lg ring-1 ring-black/5 focus:outline-none"
         modal={false}
       >
         <div className="py-1">

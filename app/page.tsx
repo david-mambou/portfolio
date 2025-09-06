@@ -7,13 +7,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center pt-28 pb-12 bg-gray-50 text-gray-800">
+    <main className="flex min-h-screen flex-col items-center justify-center pt-28 pb-12 bg-gray-50 dark:bg-neutral-800 text-gray-800 dark:text-gray-100">
       {/* Hero */}
       <section id="hero" className="max-w-3xl text-center space-y-6">
         <h1 className="text-5xl font-extrabold tracking-tight">
-          Hi, I’m <span className="text-blue-600">David</span>
+          Hi, I’m <span className="text-blue-600 dark:text-blue-400">David</span>
         </h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-gray-600 dark:text-gray-400">
           Full-stack Developer — building smooth, performant, and user-friendly
           web experiences.
         </p>
@@ -30,7 +30,7 @@ export default function Home() {
       <section id="projects" className="mt-20 w-full">
         <h2 className="text-3xl font-bold mb-8 text-center">💼 Projects</h2>
         {/* Project Card */}
-        <div className="p-6 shadow hover:shadow-md transition bg-white">
+        <div className="p-6 shadow hover:shadow-md transition bg-white dark:bg-neutral-900">
           <div className="md:flex space-x-8">
             <div>
               <h3 className="text-xl font-semibold">Trip Timeline Planner</h3>
@@ -38,7 +38,7 @@ export default function Home() {
                 Full-stack web app, coded using Ruby on Rails (back-end), React
                 (front-end)
               </p>
-              <p className="mt-2 text-gray-600">
+              <p className="mt-2 text-gray-600 dark:text-gray-400">
                 When traveling to multiple destinations in a row, I found it
                 difficult to keep track of all bookings and details. I developed
                 this app that allows you to manage your travel itinerary,
@@ -52,16 +52,10 @@ export default function Home() {
             href="https://trip-timeline-planner-f11b5c574f9a.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-block text-blue-600 font-medium hover:underline"
+            className="mt-4 inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
           >
             View app →
           </Link>
-        </div>
-        <div className="p-6 shadow hover:shadow-md transition bg-white">
-          <h3 className="text-xl font-semibold">Portfolio Site</h3>
-          <p className="mt-2 text-gray-600">
-            This very portfolio, built with Next.js and Tailwind CSS.
-          </p>
         </div>
       </section>
 
@@ -84,11 +78,11 @@ export default function Home() {
           />
           <div>
             <h3 className="text-2xl font-bold mb-12">
-              I’m <span className="text-blue-600">David Mambou Fotie</span> — a
+              I’m <span className="text-blue-600 dark:text-blue-400">David Mambou Fotie</span> — a
               full-stack software engineer with 3 years of professional
               experience.
             </h3>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 dark:text-gray-400">
               I hold a Master’s degree in Engineering, and I’ve had the
               privilege of working with major software companies as well as a
               variety of clients around the world. I’ve contributed both as part
@@ -105,7 +99,7 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="w-full mx-auto px-6 py-16 text-center">
         <h2 className="text-3xl font-bold mb-12">📞 Contact</h2>
-        <p className="mb-8 text-lg text-gray-600">
+        <p className="mb-8 text-lg text-gray-600 dark:text-gray-400">
           Let’s work together! Feel free to contact me using the form below.
         </p>
         <ContactForm />
