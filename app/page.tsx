@@ -11,7 +11,8 @@ export default function Home() {
       {/* Hero */}
       <section id="hero" className="max-w-3xl text-center space-y-6">
         <h1 className="text-5xl font-extrabold tracking-tight">
-          Hi, I’m <span className="text-blue-600 dark:text-blue-400">David</span>
+          Hi, I’m{" "}
+          <span className="text-blue-600 dark:text-blue-400">David</span>
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-400">
           Full-stack Developer — building smooth, performant, and user-friendly
@@ -19,7 +20,7 @@ export default function Home() {
         </p>
         <Link
           href="#contact"
-          className="rounded-lg border border-gray-300 px-5 py-2 text-gray-700 font-medium shadow hover:bg-gray-100 transition"
+          className="rounded-lg border border-gray-300 px-5 py-2 text-gray-700 dark:text-gray-200 font-medium shadow dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)] bg-white dark:bg-neutral-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
           scroll
         >
           Contact Me
@@ -78,8 +79,11 @@ export default function Home() {
           />
           <div>
             <h3 className="text-2xl font-bold mb-12">
-              I’m <span className="text-blue-600 dark:text-blue-400">David Mambou Fotie</span> — a
-              full-stack software engineer with 3 years of professional
+              I’m{" "}
+              <span className="text-blue-600 dark:text-blue-400">
+                David Mambou Fotie
+              </span>{" "}
+              — a full-stack software engineer with 3 years of professional
               experience.
             </h3>
             <p className="text-xl text-gray-600 dark:text-gray-400">
