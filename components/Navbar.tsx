@@ -1,23 +1,35 @@
 "use client";
 
+import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 text-gray-800 dark:text-gray-200 bg-white dark:bg-black shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <h1 className="text-lg font-semibold">David Mambou Fotie</h1>
-        <nav className="space-x-4">
-          <a href="#" className="hover:underline">
+        <nav className="flex space-x-4 items-center">
+          <Link
+            href="#hero"
+            className="transition-transform duration-200 hover:scale-105"
+            scroll
+          >
             Home
-          </a>
-          <a href="#" className="hover:underline">
-            About
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link
+            href="#about"
+            className="transition-transform duration-200 hover:scale-105"
+            scroll
+          >
+            About me
+          </Link>
+          <Link
+            href="#contact"
+            className="transition-transform duration-200 hover:scale-105"
+            scroll
+          >
             Contact
-          </a>
-
+          </Link>
           <ModeToggle />
         </nav>
       </div>
