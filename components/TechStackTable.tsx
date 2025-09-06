@@ -7,6 +7,7 @@ import {
   FaNodeJs,
   FaGitAlt,
 } from "react-icons/fa";
+import { FaAws, FaDocker, FaJava } from "react-icons/fa6";
 import {
   SiTypescript,
   SiNextdotjs,
@@ -14,70 +15,122 @@ import {
   SiPostgresql,
   SiRuby,
   SiRubyonrails,
+  SiDjango,
+  SiPython,
+  SiGooglecloud,
+  SiFirebase,
+  SiJest,
+  SiRemix,
 } from "react-icons/si";
+import PlaywrightIcon from "./icons/PlaywrightIcon";
 
 export default function TechStackTable() {
   return (
-    <section className="w-full mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold text-center mb-12">⚡ Tech Stack</h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Frontend */}
-        <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-4 text-center">Frontend</h3>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3">
-              <FaReact className="text-sky-500 text-2xl" /> React
-            </li>
-            <li className="flex items-center gap-3">
-              <SiNextdotjs className="text-gray-900 dark:text-white text-2xl" />{" "}
-              Next.js
-            </li>
-            <li className="flex items-center gap-3">
-              <SiTypescript className="text-blue-600 text-2xl" /> TypeScript
-            </li>
-            <li className="flex items-center gap-3">
-              <SiTailwindcss className="text-cyan-500 text-2xl" /> Tailwind CSS
-            </li>
-            <li className="flex items-center gap-3">
-              <FaHtml5 className="text-orange-500 text-2xl" /> HTML5
-            </li>
-            <li className="flex items-center gap-3">
-              <FaCss3Alt className="text-blue-500 text-2xl" /> CSS3
-            </li>
-          </ul>
-        </div>
-
-        {/* Backend */}
-        <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-4 text-center">Backend</h3>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3">
-              <FaNodeJs className="text-green-600 text-2xl" /> Node.js
-            </li>
-            <li className="flex items-center gap-3">
-              <SiPostgresql className="text-sky-700 text-2xl" /> PostgreSQL
-            </li>
-            <li className="flex items-center gap-3">
-              <SiRuby className="text-red-600 text-2xl" /> Ruby
-            </li>
-            <li className="flex items-center gap-3">
-              <SiRubyonrails className="text-red-500 text-2xl" /> Rails
-            </li>
-          </ul>
-        </div>
-
-        {/* Others */}
-        <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-4 text-center">Others</h3>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3">
-              <FaGitAlt className="text-orange-600 text-2xl" /> Git
-            </li>
-            {/* Add more tools here */}
-          </ul>
-        </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Frontend */}
+      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
+        <h3 className="text-xl font-semibold mb-4 text-center">Frontend</h3>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3">
+            <FaReact className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            React
+          </li>
+          <li className="flex items-center gap-3">
+            <SiNextdotjs className="text-blue-600 dark:text-blue-400 dark:text-white text-2xl" />{" "}
+            Next.js
+          </li>
+          <li className="flex items-center gap-3">
+            <SiRemix className="text-blue-600 dark:text-blue-400 dark:text-white text-2xl" />{" "}
+            Remix
+          </li>
+          <li className="flex items-center gap-3">
+            <SiTypescript className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            TypeScript
+          </li>
+          <li className="flex items-center gap-3">
+            <SiTailwindcss className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Tailwind CSS
+          </li>
+          <li className="flex items-center gap-3">
+            <FaHtml5 className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            HTML5
+          </li>
+          <li className="flex items-center gap-3">
+            <FaCss3Alt className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            CSS3
+          </li>
+        </ul>
       </div>
-    </section>
+
+      {/* Backend */}
+      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
+        <h3 className="text-xl font-semibold mb-4 text-center">Backend</h3>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3">
+            <FaNodeJs className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Node.js
+          </li>
+          <li className="flex items-center gap-3">
+            <SiPostgresql className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            PostgreSQL
+          </li>
+          <li className="flex items-center gap-3">
+            <SiPython className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Python
+          </li>
+          <li className="flex items-center gap-3">
+            <SiDjango className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Django
+          </li>
+          <li className="flex items-center gap-3">
+            <FaJava className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Java
+          </li>
+          <li className="flex items-center gap-3">
+            <SiRuby className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Ruby
+          </li>
+          <li className="flex items-center gap-3">
+            <SiRubyonrails className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Rails
+          </li>
+        </ul>
+      </div>
+
+      {/* Tools */}
+      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
+        <h3 className="text-xl font-semibold mb-4 text-center">Tools</h3>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3">
+            <FaDocker className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Docker
+          </li>
+          <li className="flex items-center gap-3">
+            <FaAws className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Amazon Web Services
+          </li>
+          <li className="flex items-center gap-3">
+            <SiGooglecloud className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Google Cloud Platform
+          </li>
+          <li className="flex items-center gap-3">
+            <SiFirebase className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Firebase
+          </li>
+          <li className="flex items-center gap-3">
+            <PlaywrightIcon className="text-blue-600 dark:text-blue-400" />{" "}
+            Playwright
+          </li>
+          <li className="flex items-center gap-3">
+            <SiJest className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Jest
+          </li>
+          <li className="flex items-center gap-3">
+            <FaGitAlt className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Git
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }

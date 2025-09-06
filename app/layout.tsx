@@ -25,13 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth overflow-y-scroll" lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProviderWrapper>
           <Navbar />
-          <main className="pt-16">{children}</main>
+          {children}
         </ThemeProviderWrapper>
       </body>
     </html>
