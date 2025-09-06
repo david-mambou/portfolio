@@ -84,9 +84,9 @@ export default function TechStackTable() {
         </ul>
       </div>
 
-      {/* Others */}
+      {/* Tools */}
       <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow">
-        <h3 className="text-xl font-semibold mb-4 text-center">Others</h3>
+        <h3 className="text-xl font-semibold mb-4 text-center">Tools</h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-3">
             <FaDocker className="text-blue-600 text-2xl" /> Docker
