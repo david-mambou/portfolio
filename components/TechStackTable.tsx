@@ -32,26 +32,32 @@ export default function TechStackTable() {
         <h3 className="text-xl font-semibold mb-4 text-center">Frontend</h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-3">
-            <FaReact className="text-blue-600 dark:text-blue-400 text-2xl" /> React
+            <FaReact className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            React
           </li>
           <li className="flex items-center gap-3">
             <SiNextdotjs className="text-blue-600 dark:text-blue-400 dark:text-white text-2xl" />{" "}
             Next.js
           </li>
           <li className="flex items-center gap-3">
-            <SiRemix className="text-blue-600 dark:text-blue-400 dark:text-white text-2xl" /> Remix
+            <SiRemix className="text-blue-600 dark:text-blue-400 dark:text-white text-2xl" />{" "}
+            Remix
           </li>
           <li className="flex items-center gap-3">
-            <SiTypescript className="text-blue-600 dark:text-blue-400 text-2xl" /> TypeScript
+            <SiTypescript className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            TypeScript
           </li>
           <li className="flex items-center gap-3">
-            <SiTailwindcss className="text-blue-600 dark:text-blue-400 text-2xl" /> Tailwind CSS
+            <SiTailwindcss className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Tailwind CSS
           </li>
           <li className="flex items-center gap-3">
-            <FaHtml5 className="text-blue-600 dark:text-blue-400 text-2xl" /> HTML5
+            <FaHtml5 className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            HTML5
           </li>
           <li className="flex items-center gap-3">
-            <FaCss3Alt className="text-blue-600 dark:text-blue-400 text-2xl" /> CSS3
+            <FaCss3Alt className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            CSS3
           </li>
         </ul>
       </div>
@@ -61,25 +67,32 @@ export default function TechStackTable() {
         <h3 className="text-xl font-semibold mb-4 text-center">Backend</h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-3">
-            <FaNodeJs className="text-blue-600 dark:text-blue-400 text-2xl" /> Node.js
+            <FaNodeJs className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Node.js
           </li>
           <li className="flex items-center gap-3">
-            <SiPostgresql className="text-blue-600 dark:text-blue-400 text-2xl" /> PostgreSQL
+            <SiPostgresql className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            PostgreSQL
           </li>
           <li className="flex items-center gap-3">
-            <SiPython className="text-blue-600 dark:text-blue-400 text-2xl" /> Python
+            <SiPython className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Python
           </li>
           <li className="flex items-center gap-3">
-            <SiDjango className="text-blue-600 dark:text-blue-400 text-2xl" /> Django
+            <SiDjango className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Django
           </li>
           <li className="flex items-center gap-3">
-            <FaJava className="text-blue-600 dark:text-blue-400 text-2xl" /> Java
+            <FaJava className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Java
           </li>
           <li className="flex items-center gap-3">
-            <SiRuby className="text-blue-600 dark:text-blue-400 text-2xl" /> Ruby
+            <SiRuby className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Ruby
           </li>
           <li className="flex items-center gap-3">
-            <SiRubyonrails className="text-blue-600 dark:text-blue-400 text-2xl" /> Rails
+            <SiRubyonrails className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Rails
           </li>
         </ul>
       </div>
@@ -89,26 +102,31 @@ export default function TechStackTable() {
         <h3 className="text-xl font-semibold mb-4 text-center">Tools</h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-3">
-            <FaDocker className="text-blue-600 dark:text-blue-400 text-2xl" /> Docker
+            <FaDocker className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Docker
           </li>
           <li className="flex items-center gap-3">
-            <FaAws className="text-blue-600 dark:text-blue-400 text-2xl" /> Amazon Web Services
+            <FaAws className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Amazon Web Services
           </li>
           <li className="flex items-center gap-3">
-            <SiGooglecloud className="text-blue-600 dark:text-blue-400 text-2xl" /> Google Cloud
-            Platform
+            <SiGooglecloud className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Google Cloud Platform
           </li>
           <li className="flex items-center gap-3">
-            <SiFirebase className="text-blue-600 dark:text-blue-400 text-2xl" /> Firebase
+            <SiFirebase className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Firebase
           </li>
           <li className="flex items-center gap-3">
             <PlaywrightIcon /> Playwright
           </li>
           <li className="flex items-center gap-3">
-            <SiJest className="text-blue-600 dark:text-blue-400 text-2xl" /> Jest
+            <SiJest className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Jest
           </li>
           <li className="flex items-center gap-3">
-            <FaGitAlt className="text-blue-600 dark:text-blue-400 text-2xl" /> Git
+            <FaGitAlt className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            Git
           </li>
         </ul>
       </div>
