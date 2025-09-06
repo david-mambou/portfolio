@@ -41,7 +41,7 @@ export default function ContactForm() {
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
-        className="w-full border p-2 rounded"
+        className="w-full bg-white p-2 rounded"
       />
       <input
         type="email"
@@ -49,14 +49,14 @@ export default function ContactForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="w-full border p-2 rounded"
+        className="w-full bg-white p-2 rounded"
       />
       <textarea
         placeholder="Message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         required
-        className="w-full border p-2 rounded"
+        className="w-full bg-white p-2 rounded"
       />
       <button
         type="submit"
