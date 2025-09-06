@@ -32,8 +32,8 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8 text-center">💼 Projects</h2>
         {/* Project Card */}
         <div className="p-6 shadow hover:shadow-md transition bg-white dark:bg-neutral-900">
-          <div className="md:flex space-x-8">
-            <div className="flex flex-col justify-between mb-4 md:mb-0">
+          <div className="lg:flex space-x-8">
+            <div className="flex flex-col justify-between mb-4 lg:mb-0">
               <div>
                 <h3 className="text-xl font-semibold">Trip Timeline Planner</h3>
                 <p>
