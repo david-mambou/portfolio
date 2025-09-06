@@ -33,30 +33,32 @@ export default function Home() {
         {/* Project Card */}
         <div className="p-6 shadow hover:shadow-md transition bg-white dark:bg-neutral-900">
           <div className="md:flex space-x-8">
-            <div>
-              <h3 className="text-xl font-semibold">Trip Timeline Planner</h3>
-              <p>
-                Full-stack web app, coded using Ruby on Rails (back-end), React
-                (front-end)
-              </p>
-              <p className="mt-2 text-gray-600 dark:text-gray-400">
-                When traveling to multiple destinations in a row, I found it
-                difficult to keep track of all bookings and details. I developed
-                this app that allows you to manage your travel itinerary,
-                including flights, accommodations, and activities, in a more
-                intuitive way than a simple notepad.
-              </p>
+            <div className="flex flex-col justify-between">
+              <div>
+                <h3 className="text-xl font-semibold">Trip Timeline Planner</h3>
+                <p>
+                  Full-stack web app, coded using Ruby on Rails (back-end),
+                  React (front-end)
+                </p>
+                <p className="mt-2 text-gray-600 dark:text-gray-400">
+                  When traveling to multiple destinations in a row, I found it
+                  difficult to keep track of all bookings and details. I
+                  developed this app that allows you to manage your travel
+                  itinerary, including flights, accommodations, and activities,
+                  in a more intuitive way than a simple notepad.
+                </p>
+              </div>
+              <Link
+                href="https://trip-timeline-planner-f11b5c574f9a.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
+              >
+                View app →
+              </Link>
             </div>
             <Carousel />
           </div>
-          <Link
-            href="https://trip-timeline-planner-f11b5c574f9a.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
-          >
-            View app →
-          </Link>
         </div>
       </section>
 
