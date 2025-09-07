@@ -26,13 +26,13 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: "en" | "fr" | "ja" }>;
+  params: Promise<{ lang: string }>;
 }>) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
 
   return (
-    <html className="scroll-smooth overflow-y-scroll" lang="en">
+    <html className="scroll-smooth overflow-y-scroll" lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
