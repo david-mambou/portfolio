@@ -1,0 +1,25 @@
+{
+  "about": "À propos",
+  "aboutContent": "Diplômé d’un Master en ingénierie, j’ai eu l’opportunité de travailler aussi bien pour de grandes entreprises de logiciels que pour divers clients à travers le monde. Au fil de mes missions, j’ai contribué aussi bien en équipe qu’en projets solo, ce qui m’a permis de développer une grande capacité d’adaptation aux différents environnements de travail. J’aime aussi bien concevoir des interfaces front-end intuitives et réactives que mettre en place des systèmes back-end évolutifs et robustes. Mon objectif : transformer des idées en solutions concrètes, performantes et durables.",
+  "aboutHeadlineA": "Je suis ",
+  "aboutHeadlineB": " — développeur web full-stack avec 3 ans d'expérience professionnelle.",
+  "backend": "Back-end",
+  "contact": "Contact",
+  "contactHeadline": "Travaillons ensemble ! N'hésitez pas à me contacter en utilisant le formulaire ci-dessous.",
+  "contactMe": "Me contacter",
+  "email": "E-mail",
+  "frontend": "Front-end",
+  "headline": "Développeur full-stack — création d'expériences web fluides, performantes et conviviales.",
+  "home": "Accueil",
+  "message": "Message",
+  "name": "Nom",
+  "projects": "Projets",
+  "send": "Envoyer",
+  "techStack": "Tech Stack",
+  "tools": "Outils",
+  "tripTimelinePlanner": {
+    "description": "En voyageant vers plusieurs destinations à la suite, j’ai trouvé difficile de garder une vue claire sur toutes mes réservations et leurs détails. J’ai donc développé cette application qui permet de gérer facilement son itinéraire de voyage — vols, hébergements et activités — de manière plus intuitive qu’avec un simple bloc-notes.",
+    "stack": "Application web full-stack, codée avec Ruby on Rails (back-end), React (front-end)"
+  },
+  "viewApp": "Voir l'application"
+}

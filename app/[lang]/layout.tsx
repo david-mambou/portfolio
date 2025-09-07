@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import ThemeProviderWrapper from "@/components/ThemeProviderWrapper";
 import Navbar from "@/components/Navbar";
+import { getDictionary } from "@/dictionaries/dictionaries";
+import { I18nProvider } from "@/components/I18nContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,19 +21,26 @@ export const metadata: Metadata = {
   description: "David Mambou Fotie's portfolio",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: "en" | "fr" | "ja" }>;
 }>) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
   return (
     <html className="scroll-smooth overflow-y-scroll" lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProviderWrapper>
-          <Navbar />
-          {children}
+          <I18nProvider dictionary={dict}>
+            <Navbar />
+            {children}
+          </I18nProvider>
         </ThemeProviderWrapper>
       </body>
     </html>

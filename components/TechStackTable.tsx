@@ -23,40 +23,45 @@ import {
   SiRemix,
 } from "react-icons/si";
 import PlaywrightIcon from "./icons/PlaywrightIcon";
+import { useTranslations } from "./I18nContext";
 
 export default function TechStackTable() {
+  const dict = useTranslations();
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Frontend */}
       <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
-        <h3 className="text-xl font-semibold mb-4 text-center">Frontend</h3>
+        <h3 className="text-xl font-semibold mb-4 text-center">
+          {dict("frontend")}
+        </h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-3">
-            <FaReact className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaReact className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             React
           </li>
           <li className="flex items-center gap-3">
-            <SiNextdotjs className="text-blue-600 dark:text-blue-400 dark:text-white text-2xl" />{" "}
+            <SiNextdotjs className="text-blue-700 dark:text-blue-400 dark:text-white text-2xl" />{" "}
             Next.js
           </li>
           <li className="flex items-center gap-3">
-            <SiRemix className="text-blue-600 dark:text-blue-400 dark:text-white text-2xl" />{" "}
+            <SiRemix className="text-blue-700 dark:text-blue-400 dark:text-white text-2xl" />{" "}
             Remix
           </li>
           <li className="flex items-center gap-3">
-            <SiTypescript className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiTypescript className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             TypeScript
           </li>
           <li className="flex items-center gap-3">
-            <SiTailwindcss className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiTailwindcss className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Tailwind CSS
           </li>
           <li className="flex items-center gap-3">
-            <FaHtml5 className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaHtml5 className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             HTML5
           </li>
           <li className="flex items-center gap-3">
-            <FaCss3Alt className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaCss3Alt className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             CSS3
           </li>
         </ul>
@@ -64,34 +69,36 @@ export default function TechStackTable() {
 
       {/* Backend */}
       <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
-        <h3 className="text-xl font-semibold mb-4 text-center">Backend</h3>
+        <h3 className="text-xl font-semibold mb-4 text-center">
+          {dict("backend")}
+        </h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-3">
-            <FaNodeJs className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaNodeJs className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Node.js
           </li>
           <li className="flex items-center gap-3">
-            <SiPostgresql className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiPostgresql className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             PostgreSQL
           </li>
           <li className="flex items-center gap-3">
-            <SiPython className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiPython className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Python
           </li>
           <li className="flex items-center gap-3">
-            <SiDjango className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiDjango className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Django
           </li>
           <li className="flex items-center gap-3">
-            <FaJava className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaJava className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Java
           </li>
           <li className="flex items-center gap-3">
-            <SiRuby className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiRuby className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Ruby
           </li>
           <li className="flex items-center gap-3">
-            <SiRubyonrails className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiRubyonrails className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Rails
           </li>
         </ul>
@@ -99,34 +106,36 @@ export default function TechStackTable() {
 
       {/* Tools */}
       <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
-        <h3 className="text-xl font-semibold mb-4 text-center">Tools</h3>
+        <h3 className="text-xl font-semibold mb-4 text-center">
+          {dict("tools")}
+        </h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-3">
-            <FaDocker className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaDocker className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Docker
           </li>
           <li className="flex items-center gap-3">
-            <FaAws className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaAws className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Amazon Web Services
           </li>
           <li className="flex items-center gap-3">
-            <SiGooglecloud className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiGooglecloud className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Google Cloud Platform
           </li>
           <li className="flex items-center gap-3">
-            <SiFirebase className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiFirebase className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Firebase
           </li>
           <li className="flex items-center gap-3">
-            <PlaywrightIcon className="text-blue-600 dark:text-blue-400" />{" "}
+            <PlaywrightIcon className="text-blue-700 dark:text-blue-400" />{" "}
             Playwright
           </li>
           <li className="flex items-center gap-3">
-            <SiJest className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <SiJest className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Jest
           </li>
           <li className="flex items-center gap-3">
-            <FaGitAlt className="text-blue-600 dark:text-blue-400 text-2xl" />{" "}
+            <FaGitAlt className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Git
           </li>
         </ul>
