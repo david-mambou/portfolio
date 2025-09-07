@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "./I18nContext";
 
 export default function ContactForm() {
+  const dict = useTranslations();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -37,7 +39,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
       <input
         type="text"
-        placeholder="Name"
+        placeholder={dict("name")}
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
@@ -45,14 +47,14 @@ export default function ContactForm() {
       />
       <input
         type="email"
-        placeholder="Email"
+        placeholder={dict("email")}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
         className="w-full bg-white dark:bg-neutral-900 p-2 rounded"
       />
       <textarea
-        placeholder="Message"
+        placeholder={dict("message")}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         required
@@ -60,9 +62,9 @@ export default function ContactForm() {
       />
       <button
         type="submit"
-        className="bg-blue-600 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
+        className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
       >
-        Send
+        {dict("send")}
       </button>
       {status && <p className="text-sm text-gray-500">{status}</p>}
     </form>
