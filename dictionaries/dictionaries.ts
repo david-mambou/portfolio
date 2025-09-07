@@ -7,6 +7,5 @@ const dictionaries = {
 };
 
 export const getDictionary = async (lang: "en" | "fr" | "ja") => {
-  console.log("LANG:", lang);
   return dictionaries[lang]();
 };
