@@ -21,13 +21,25 @@ export function LanguageToggle() {
 
       {/* Dropdown */}
       <MenuItems
-        className="absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-white dark:bg-neutral-900 shadow-lg ring-1 ring-black/5 focus:outline-none"
+        className="absolute right-0 mt-2 w-12 origin-top-right rounded-md bg-white dark:bg-neutral-900 shadow-lg ring-1 ring-black/5 focus:outline-none"
         modal={false}
       >
         <div className="py-1">
-          <MenuItem text="🇺🇸" onClick={() => router.push("/en")} />
-          <MenuItem text="🇫🇷" onClick={() => router.push("/fr")} />
-          <MenuItem text="🇯🇵" onClick={() => router.push("/ja")} />
+          <MenuItem
+            className="text-lg"
+            text="🇺🇸"
+            onClick={() => router.push("/en")}
+          />
+          <MenuItem
+            className="text-lg"
+            text="🇫🇷"
+            onClick={() => router.push("/fr")}
+          />
+          <MenuItem
+            className="text-lg"
+            text="🇯🇵"
+            onClick={() => router.push("/ja")}
+          />
         </div>
       </MenuItems>
     </Menu>

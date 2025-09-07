@@ -22,9 +22,21 @@ export function ModeToggle() {
         modal={false}
       >
         <div className="py-1">
-          <MenuItem text="Light" onClick={() => setTheme("light")} />
-          <MenuItem text="Dark" onClick={() => setTheme("dark")} />
-          <MenuItem text="System" onClick={() => setTheme("system")} />
+          <MenuItem
+            className="text-sm"
+            text="Light"
+            onClick={() => setTheme("light")}
+          />
+          <MenuItem
+            className="text-sm"
+            text="Dark"
+            onClick={() => setTheme("dark")}
+          />
+          <MenuItem
+            className="text-sm"
+            text="System"
+            onClick={() => setTheme("system")}
+          />
         </div>
       </MenuItems>
     </Menu>
