@@ -1,3 +1,4 @@
+import Clients from "@/components/Clients";
 import ContactForm from "@/components/ContactForm";
 import TechStackTable from "@/components/TechStackTable";
 import Carousel from "@/components/ui/Carousel";
@@ -34,7 +35,7 @@ export default async function Home({
       </section>
 
       {/* Projects */}
-      <section id="projects" className="mt-20 w-full">
+      <section id="projects" className="my-20 w-full">
         <h2 className="text-3xl font-bold mb-8 text-center">
           💼 {dict.projects}
         </h2>
@@ -61,6 +62,11 @@ export default async function Home({
             <Carousel />
           </div>
         </div>
+      </section>
+
+      {/* Clients */}
+      <section className="py-20 bg-gray-50">
+        <Clients />
       </section>
 
       {/* Tech Stack */}

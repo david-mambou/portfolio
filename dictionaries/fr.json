@@ -4,15 +4,28 @@
   "aboutHeadlineA": "Je suis ",
   "aboutHeadlineB": " — développeur web full-stack avec 3 ans d'expérience professionnelle.",
   "backend": "Back-end",
+  "bbSakura": {
+    "description": "J’ai dirigé le développement front-end d’une application de gestion de ressources, puis amélioré l’interface d’une plateforme B2B en y intégrant de nouvelles fonctionnalités majeures. J’ai également mis en place une suite de tests end-to-end afin de renforcer la fiabilité et réduire les régressions.",
+    "name": "BBSakura Networks"
+  },
   "contact": "Contact",
   "contactHeadline": "Travaillons ensemble ! N'hésitez pas à me contacter en utilisant le formulaire ci-dessous.",
   "contactMe": "Me contacter",
+  "digirise": {
+    "description": "J’ai repensé aussi bien le front-end que le back-end de la plateforme de chat B2B propulsée par l’IA AI Works. J’ai mis en place des workflows CI pour garantir la cohérence du code au sein de l’équipe et collaboré avec les product managers afin de livrer de nouvelles fonctionnalités répondant aux besoins des clients.",
+    "name": "Digirise"
+  },
   "email": "E-mail",
+  "exaWizards": {
+    "description": "J’ai travaillé avec des équipes internationales sur le développement et le lancement de produits B2B basés sur l’IA, en contribuant à la fois au front-end et au back-end. En parallèle, j’ai optimisé les pipelines de déploiement et accompagné des développeurs juniors pour assurer une livraison fluide et efficace.",
+    "name": "ExaWizards"
+  },
   "frontend": "Front-end",
   "headline": "Développeur full-stack — création d'expériences web fluides, performantes et conviviales.",
   "home": "Accueil",
   "message": "Message",
   "name": "Nom",
+  "pastClients": "Clients précédents",
   "projects": "Projets",
   "send": "Envoyer",
   "techStack": "Tech Stack",
@@ -21,5 +34,6 @@
     "description": "En voyageant vers plusieurs destinations à la suite, j’ai trouvé difficile de garder une vue claire sur toutes mes réservations et leurs détails. J’ai donc développé cette application qui permet de gérer facilement son itinéraire de voyage — vols, hébergements et activités — de manière plus intuitive qu’avec un simple bloc-notes.",
     "stack": "Application web full-stack, codée avec Ruby on Rails (back-end), React (front-end)"
   },
-  "viewApp": "Voir l'application"
+  "viewApp": "Voir l'application",
+  "visitWebsite": "Voir le site Web"
 }
