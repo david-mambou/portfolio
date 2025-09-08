@@ -6,19 +6,19 @@
   "backend": "Back-end",
   "bbSakura": {
     "description": "I led front-end development of a resource management app, redesigned and enhanced a B2B platform with major new features, and implemented end-to-end testing to improve reliability.",
-    "name": "BBSakura Networks"
+    "name": "BBSakura Networks, Inc."
   },
   "contact": "Contact",
   "contactHeadline": "Let’s work together! Feel free to contact me using the form below.",
   "contactMe": "Contact Me",
   "digirise": {
     "description": "I redeveloped both the front-end and back-end of the AI-powered B2B chat platform AI Works, set up CI workflows to maintain consistent coding standards across the team, and collaborated with product managers to deliver new features tailored to client needs.",
-    "name": "Digirise"
+    "name": "Digirise Inc."
   },
   "email": "Email",
   "exaWizards": {
     "description": "I’ve collaborated with international teams to build and launch AI-powered B2B products, contributing across both front-end and back-end. Beyond feature development, I’ve streamlined deployment pipelines and supported junior developers to ensure smooth and efficient delivery.",
-    "name": "ExaWizards"
+    "name": "ExaWizards Inc."
   },
   "frontend": "Front-end",
   "headline": "Full-stack Developer — building smooth, performant, and user-friendly web experiences.",
@@ -27,6 +27,8 @@
   "name": "Name",
   "pastClients": "Past Clients",
   "projects": "Projects",
+  "resumeEn": "My Resume",
+  "resumeJa": "Resume (日本語)",
   "send": "Send",
   "techStack": "Tech Stack",
   "tools": "Tools",

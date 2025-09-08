@@ -27,6 +27,8 @@
   "name": "お名前",
   "pastClients": "これまでのクライアント",
   "projects": "プロジェクト",
+  "resumeEn": "履歴書（英語版）",
+  "resumeJa": "履歴書（日本語版）",
   "send": "送信",
   "techStack": "技術スタック",
   "tools": "ツール",
