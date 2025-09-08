@@ -30,7 +30,7 @@ export default async function Home({
         </p>
         <Link
           href="#contact"
-          className="rounded-lg border border-gray-300 px-5 py-2 text-gray-700 dark:text-gray-200 font-medium shadow dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)] bg-white dark:bg-neutral-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          className="rounded border border-gray-300 px-5 py-2 text-gray-700 dark:text-gray-200 font-medium shadow dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)] bg-white dark:bg-neutral-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
           scroll
         >
           {dict.contactMe}
@@ -93,7 +93,7 @@ export default async function Home({
           />
 
           {/* Text */}
-          <div className="mt-4 md:mt-0 text-center md:text-left">
+          <div className="mt-4 flex flex-col space-y-4 md:mt-0 text-center md:text-left">
             <h3 className="text-2xl font-bold mb-4">
               {dict.aboutHeadlineA}{" "}
               <span className="text-blue-700 dark:text-blue-400">
@@ -104,6 +104,24 @@ export default async function Home({
             <p className="text-xl text-gray-600 dark:text-gray-400">
               {dict.aboutContent}
             </p>
+            <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+              {lang === "ja" && (
+                <Link
+                  href="/resume-ja.pdf"
+                  className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                  scroll
+                >
+                  {dict.resumeJa}
+                </Link>
+              )}
+              <Link
+                href="/resume-en.pdf"
+                className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                scroll
+              >
+                {dict.resumeEn}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
