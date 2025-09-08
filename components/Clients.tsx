@@ -25,11 +25,11 @@ export default function Clients() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6">
-      <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+    <div className="max-w-4xl mx-auto px-6 space-y-12">
+      <h2 className="text-3xl font-bold text-gray-900 text-center">
         {dict("pastClients")}
       </h2>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="flex flex-col space-y-8">
         {clients.map((client, i) => (
           <div
             key={i}
@@ -37,7 +37,7 @@ export default function Clients() {
           >
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {client.name}
+                {client.name ?? dict("confidentialClient")}
               </h3>
               <p className="text-gray-600">{client.description}</p>
             </div>
