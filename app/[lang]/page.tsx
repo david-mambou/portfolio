@@ -18,7 +18,10 @@ export default async function Home({
   return (
     <main className="flex min-h-screen flex-col items-center justify-center pt-28 pb-12 bg-gray-50 dark:bg-neutral-800 text-gray-800 dark:text-gray-100">
       {/* Hero */}
-      <section id="hero" className="max-w-3xl text-center space-y-6 px-4">
+      <section
+        id="hero"
+        className="max-w-3xl text-center space-y-6 px-4 scroll-mt-30"
+      >
         <h1 className="text-5xl font-extrabold tracking-tight text-blue-700 dark:text-blue-400">
           David Mambou Fotie
         </h1>
@@ -36,9 +39,7 @@ export default async function Home({
 
       {/* Projects */}
       <section id="projects" className="my-20 w-full">
-        <h2 className="text-3xl font-bold mb-8 text-center">
-          💼 {dict.projects}
-        </h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">{dict.projects}</h2>
         {/* Project Card */}
         <div className="p-6 shadow hover:shadow-md transition bg-white dark:bg-neutral-900">
           <div className="lg:flex space-x-8">
@@ -72,16 +73,14 @@ export default async function Home({
       {/* Tech Stack */}
       <section className="w-full mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">
-          ⚡ {dict.techStack}
+          {dict.techStack}
         </h2>
         <TechStackTable />
       </section>
 
       {/* About me */}
       <section id="about" className="w-full mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          🌱 {dict.about}
-        </h2>
+        <h2 className="text-3xl font-bold text-center mb-12">{dict.about}</h2>
 
         <div className="flex flex-col md:flex-row items-center md:items-center justify-center mb-4 gap-8">
           {/* Picture */}
@@ -111,7 +110,7 @@ export default async function Home({
 
       {/* Contact */}
       <section id="contact" className="w-full mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl font-bold mb-12">📞 {dict.contact}</h2>
+        <h2 className="text-3xl font-bold mb-12">{dict.contact}</h2>
         <p className="mb-8 text-lg text-gray-600 dark:text-gray-400">
           {dict.contactHeadline}
         </p>

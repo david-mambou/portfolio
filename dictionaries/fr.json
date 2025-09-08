@@ -28,7 +28,7 @@
   "pastClients": "Clients précédents",
   "projects": "Projets",
   "send": "Envoyer",
-  "techStack": "Tech Stack",
+  "techStack": "Technologies",
   "tools": "Outils",
   "tripTimelinePlanner": {
     "description": "En voyageant vers plusieurs destinations à la suite, j’ai trouvé difficile de garder une vue claire sur toutes mes réservations et leurs détails. J’ai donc développé cette application qui permet de gérer facilement son itinéraire de voyage — vols, hébergements et activités — de manière plus intuitive qu’avec un simple bloc-notes.",
