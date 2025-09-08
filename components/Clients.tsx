@@ -35,7 +35,7 @@ export default function Clients() {
           >
             <div>
               <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">
-                {client.name ?? dict("confidentialClient")}
+                {client.name}
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
                 {client.description}
