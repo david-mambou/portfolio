@@ -26,26 +26,26 @@ export default function Clients() {
 
   return (
     <div className="max-w-4xl mx-auto px-6 space-y-12">
-      <h2 className="text-3xl font-bold text-gray-900 text-center">
-        {dict("pastClients")}
-      </h2>
+      <h2 className="text-3xl font-bold text-center">{dict("pastClients")}</h2>
       <div className="flex flex-col space-y-8">
         {clients.map((client, i) => (
           <div
             key={i}
-            className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between"
+            className="bg-white rounded-2xl shadow p-6 flex flex-col justify-between dark:bg-neutral-900 dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)]"
           >
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">
                 {client.name ?? dict("confidentialClient")}
               </h3>
-              <p className="text-gray-600">{client.description}</p>
+              <p className="text-gray-600 dark:text-gray-400">
+                {client.description}
+              </p>
             </div>
             <div className="mt-4">
               <Link
                 href={client.link}
                 target="_blank"
-                className="text-blue-600 font-medium hover:underline"
+                className="text-blue-600 font-medium hover:underline dark:text-blue-400"
               >
                 {dict("visitWebsite")}
               </Link>

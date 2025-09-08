@@ -66,7 +66,7 @@ export default async function Home({
       </section>
 
       {/* Clients */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <Clients />
       </section>
 
@@ -85,7 +85,7 @@ export default async function Home({
         <div className="flex flex-col md:flex-row items-center md:items-center justify-center mb-4 gap-8">
           {/* Picture */}
           <Image
-            className="rounded-xl"
+            className="rounded-xl shadow dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)]"
             src="/mypic.png"
             alt="My Picture"
             width={300}

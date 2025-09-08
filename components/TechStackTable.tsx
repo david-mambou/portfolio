@@ -31,7 +31,7 @@ export default function TechStackTable() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Frontend */}
-      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
+      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)]">
         <h3 className="text-xl font-semibold mb-4 text-center">
           {dict("frontend")}
         </h3>
@@ -68,7 +68,7 @@ export default function TechStackTable() {
       </div>
 
       {/* Backend */}
-      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
+      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)]">
         <h3 className="text-xl font-semibold mb-4 text-center">
           {dict("backend")}
         </h3>
@@ -105,7 +105,7 @@ export default function TechStackTable() {
       </div>
 
       {/* Tools */}
-      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow">
+      <div className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow dark:shadow-[0_2px_6px_rgba(255,255,255,0.08)]">
         <h3 className="text-xl font-semibold mb-4 text-center">
           {dict("tools")}
         </h3>
