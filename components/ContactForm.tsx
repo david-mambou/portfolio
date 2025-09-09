@@ -47,6 +47,7 @@ export default function ContactForm() {
       />
       <input
         type="email"
+        pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
         placeholder={dict("email")}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
