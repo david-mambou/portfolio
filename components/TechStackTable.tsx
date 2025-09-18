@@ -41,11 +41,11 @@ export default function TechStackTable() {
             React
           </li>
           <li className="flex items-center gap-3">
-            <SiNextdotjs className="text-blue-700 dark:text-blue-400 dark:text-white text-2xl" />{" "}
+            <SiNextdotjs className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Next.js
           </li>
           <li className="flex items-center gap-3">
-            <SiRemix className="text-blue-700 dark:text-blue-400 dark:text-white text-2xl" />{" "}
+            <SiRemix className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Remix
           </li>
           <li className="flex items-center gap-3">
