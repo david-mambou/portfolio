@@ -114,13 +114,23 @@ export default async function Home({
                   {dict.resumeJa}
                 </Link>
               )}
-              <Link
-                href="/resume-en.pdf"
-                className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                scroll
-              >
-                {dict.resumeEn}
-              </Link>
+              {lang === "fr" ? (
+                <Link
+                  href="/resume-fr.pdf"
+                  className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                  scroll
+                >
+                  {dict.resume}
+                </Link>
+              ) : (
+                <Link
+                  href="/resume-en.pdf"
+                  className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                  scroll
+                >
+                  {dict.resume}
+                </Link>
+              )}
             </div>
           </div>
         </div>
