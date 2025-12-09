@@ -106,30 +106,27 @@ export default async function Home({
             </p>
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
               {lang === "ja" && (
-                <Link
+                <a
                   href="/resume-ja.pdf"
                   className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                  scroll
                 >
                   {dict.resumeJa}
-                </Link>
+                </a>
               )}
               {lang === "fr" ? (
-                <Link
+                <a
                   href="/resume-fr.pdf"
                   className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                  scroll
                 >
                   {dict.resume}
-                </Link>
+                </a>
               ) : (
-                <Link
+                <a
                   href="/resume-en.pdf"
                   className="bg-blue-700 dark:bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                  scroll
                 >
                   {dict.resume}
-                </Link>
+                </a>
               )}
             </div>
           </div>
