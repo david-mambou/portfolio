@@ -8,6 +8,11 @@ export default function Clients() {
 
   const clients = [
     {
+      name: dict("updater.name"),
+      description: dict("updater.description"),
+      link: "https://www.updater.co.jp",
+    },
+    {
       name: dict("digirise.name"),
       description: dict("digirise.description"),
       link: "https://digirise.ai/business/reskilling/ai-works",
