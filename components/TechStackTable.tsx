@@ -7,7 +7,7 @@ import {
   FaNodeJs,
   FaGitAlt,
 } from "react-icons/fa";
-import { FaAws, FaDocker, FaJava } from "react-icons/fa6";
+import { FaAws, FaDocker } from "react-icons/fa6";
 import {
   SiTypescript,
   SiNextdotjs,
@@ -15,12 +15,14 @@ import {
   SiPostgresql,
   SiRuby,
   SiRubyonrails,
-  SiDjango,
   SiPython,
   SiGooglecloud,
   SiFirebase,
   SiJest,
   SiRemix,
+  SiPrisma,
+  SiTerraform,
+  SiClaude,
 } from "react-icons/si";
 import PlaywrightIcon from "./icons/PlaywrightIcon";
 import { useTranslations } from "./I18nContext";
@@ -86,20 +88,16 @@ export default function TechStackTable() {
             Python
           </li>
           <li className="flex items-center gap-3">
-            <SiDjango className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
-            Django
-          </li>
-          <li className="flex items-center gap-3">
-            <FaJava className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
-            Java
-          </li>
-          <li className="flex items-center gap-3">
             <SiRuby className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Ruby
           </li>
           <li className="flex items-center gap-3">
             <SiRubyonrails className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Rails
+          </li>
+          <li className="flex items-center gap-3">
+            <SiPrisma className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
+            Prisma
           </li>
         </ul>
       </div>
@@ -137,6 +135,14 @@ export default function TechStackTable() {
           <li className="flex items-center gap-3">
             <FaGitAlt className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
             Git
+          </li>
+          <li className="flex items-center gap-3">
+            <SiTerraform className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
+            Terraform
+          </li>
+          <li className="flex items-center gap-3">
+            <SiClaude className="text-blue-700 dark:text-blue-400 text-2xl" />{" "}
+            Claude Code
           </li>
         </ul>
       </div>
